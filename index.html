@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- pic -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="title">
+      <h1>天氣預報</h1>
+      <select name="list" id="list">
+        <option value="">請選擇</option>
+        <option value="台北" class="cityList">台北</option>
+        <option value="桃園" class="cityList">桃園</option>
+        <option value="新竹" class="cityList">新竹</option>
+        <option value="台中" class="cityList">台中</option>
+        <option value="嘉義" class="cityList">嘉義</option>
+        <option value="台南" class="cityList">台南</option>
+        <option value="高雄" class="cityList">高雄</option>
+      </select>
+
+      <div class="area2">
+        <div id="box" class="box">
+          <h2 id="town" class="town">縣市</h2>
+          <h3 iclass="degree">
+            <span id="degreeMin">18</span> - <span id="degreeMax">24</span>°C
+          </h3>
+          <h3 id="weather" class="weather">晴時多雲</h3>
+          <h3>降雨機率: <span id="probability">10</span>%</h3>
+        </div>
+        <div class="pic">
+          <i class="fa-solid fa-moon"></i>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
